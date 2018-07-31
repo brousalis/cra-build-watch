@@ -1,10 +1,14 @@
 {
-  "name": "cra-build-watch",
-  "version": "0.0.0-development",
+  "name": "react-scripts-watch",
+  "version": "0.0.1",
   "description": "A script for create-react-app that writes development builds to the disk",
   "main": "scripts/index.js",
-  "bin": "bin/cra-build-watch.js",
-  "files": ["bin", "scripts", "utils"],
+  "bin": "bin/react-scripts-watch.js",
+  "files": [
+    "bin",
+    "scripts",
+    "utils"
+  ],
   "engines": {
     "node": ">=6.0.0"
   },
@@ -22,7 +26,10 @@
     }
   },
   "lint-staged": {
-    "{{bin,scripts,utils}/**/*.{js,json},*.{js,json}}": ["prettier --write", "git add"]
+    "{{bin,scripts,utils}/**/*.{js,json},*.{js,json}}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "prettier": {
     "printWidth": 100,
@@ -31,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nargonath/cra-build-watch.git"
+    "url": "https://github.com/brousalis/react-scripts-watch.git"
   },
   "bugs": {
-    "url": "https://github.com/Nargonath/cra-build-watch/issues"
+    "url": "https://github.com/brousalis/react-scripts-watch/issues"
   },
-  "homepage": "https://github.com/Nargonath/cra-build-watch#readme",
+  "homepage": "https://github.com/brousalis/react-scripts-watch#readme",
   "author": "Nargonath <jonas.pauthier@gmail.com>",
   "keywords": [
     "create-react-app",
